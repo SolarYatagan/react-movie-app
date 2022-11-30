@@ -1,0 +1,150 @@
+
+.style {
+    height: 70%;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid orange;
+    box-shadow: 24;
+    background: rgb(133, 126, 126);
+    border-radius: 20px;
+    padding: 1.5rem;
+  }
+
+.movie__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.movie__container-img img{
+   width: 300px;
+   height: 400px;
+   border-radius: 10px;
+   border: 10px solid black
+}
+
+.movie__container-img{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie__container-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+}
+
+.movie__container-title{
+    font-size: 22px;
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.movie__container-content_paragraphs{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie__container-content_paragraphs p{
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+b{
+    margin-right: 0.5rem;
+}
+
+.movie__container-buttons{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.movie__container-buttons button:last-child{
+    margin-right: 5rem;
+}
+
+.movie__container-buttons button{
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(226, 176, 13);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .movie__container{
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .movie__container-content{
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+
+    .movie__container-buttons{
+        width: 100%;
+    }
+    .movie__container-buttons button:last-child{
+        margin-right: 1rem;
+    }
+
+    .movie__container-img img{
+        width: 250px;
+        height: 300px;
+    }
+
+    .movie__container-title{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+
+    .movie__container-content{
+        padding: 0 2rem 0 2rem;
+    }
+
+    .movie__container-buttons button:last-child{
+        margin-right:0;
+    }
+
+    .movie__container-buttons button{
+        padding: 1rem 1rem 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .movie__container-buttons button{
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .movie__container-content{
+        padding: 0 0.2rem 0 0.2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+.movie__container-buttons button{
+        padding: 0.5rem;
+    }
+
+    .movie__container-buttons button:last-child{
+        margin-left: 1rem;
+    }
+    
+}
