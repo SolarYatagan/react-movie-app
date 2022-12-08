@@ -1,6 +1,6 @@
 # react-movie-app
 
-Live Demo 
+Live Demo https://solaryatagan.github.io/react-movie-app/
 </br>
 You need an API key from https://www.omdbapi.com/, you can get one by creating an account on their website.
 After you got your API key, create a (**.env**) file at root directory of project, copy the line below to the file and replace YOUR_KEY with your OpenWeatherMap API Key.
